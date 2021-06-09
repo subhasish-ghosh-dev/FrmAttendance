@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FrmAttendance">
-        <activity android:name=".ViewAttendance2"></activity>
+        <activity android:name=".SortActivity"></activity>
+        <activity android:name=".AvgAttendance" />
+        <activity android:name=".ViewAttendance2" />
         <activity android:name=".ViewAttendance" />
         <activity android:name=".MainActivity">
             <intent-filter>
