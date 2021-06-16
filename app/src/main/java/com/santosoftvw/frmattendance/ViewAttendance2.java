@@ -78,9 +78,28 @@ public class ViewAttendance2 extends AppCompatActivity {
         btnChart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SortActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AvgAttendance.class);
                 startActivity(intent);
             }
         });
+
+        Button btnChart1 = (Button) findViewById(R.id.button4);
+        btnChart1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), PieChartActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnChart2 = (Button) findViewById(R.id.button3);
+        btnChart2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), FileIOActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
